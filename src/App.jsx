@@ -23,7 +23,7 @@ function App() {
           <Route path="/estudantes" element={<EstudantesPage />} />
           <Route path="/pokemons" element={<PokemonPage />} />
           <Route path="/sobre" element={<SobrePage />} />
-          <Route path="/mim" element={<SobreMim />} /> {/* Corrigido o caminho para "/mim" */}
+          <Route path="/mim" element={<SobreMim />} /> 
         </Routes>
         <Rodape />
       </div>
