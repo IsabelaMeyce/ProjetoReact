@@ -62,7 +62,7 @@ const EnderecoPage = () => {
 
       <Stack alignItems="center" gap={1} direction="row">
         <TextField
-          placeholder="50012007"
+          placeholder="00000000"
           required
           inputProps={{ maxLength: 8 }}
           value={cep}
