@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #c5c5be;
+}
+
+:root{
+  --background-color: #F5F5DC;
+  --primary-color: #FF69B4;
+  --text-color: #A9A9A9;
+  --background-section: #F0F8FF;
+  --text-sobre: #471908;
+  --text-rodape: #FF1493; 
+  --font-size-large: 24px;
+  --font-size-medium: 18px;
+  --font-size-small: 14px;
+}
