@@ -6,6 +6,7 @@ import "./styles.css";
 const PokemonPage = () => {
   const [referenciasPokemons, setReferenciasPokemons] = useState([]);
   const [listaPokemons, setListaPokemons] = useState([]);
+  const [carregando, setCarregando] = useState(true); 
 
   const pegar100ReferenciasPokemons = async () => {
     try {
@@ -35,6 +36,7 @@ const PokemonPage = () => {
     }
 
     setListaPokemons(listaTemporaria);
+    setCarregando(false); // Quando a lista estiver pronta, setCarregando para false
   };
 
   useEffect(() => {
@@ -43,14 +45,21 @@ const PokemonPage = () => {
 
   return (
     <div className="pokemon-container">
-      {listaPokemons.map((pokemon) => (
-        <Pokemons
-          nome={pokemon.name}
-          foto={pokemon.sprites.front_default}
-          id={pokemon.id}
-          url={pokemon.forms[0].url}
-        />
-      ))}
+      {carregando ? (
+        // Mostrar a mensagem enquanto carregando
+        <p>Aguarde, carregando os Pokémon...</p>
+      ) : (
+        // Mostrar a lista de Pokémon quando o carregamento estiver concluído
+        listaPokemons.map((pokemon) => (
+          <Pokemons
+            key={pokemon.id} // Adicione uma chave única
+            nome={pokemon.name}
+            foto={pokemon.sprites.front_default}
+            id={pokemon.id}
+            url={pokemon.forms[0].url}
+          />
+        ))
+      )}
     </div>
   );
 };

@@ -6,6 +6,7 @@ import EnderecoPage from "./Pages/EnderecoPage";
 import EstudantesPage from "./Pages/EstudantesPage";
 import PokemonPage from "./Pages/PokemonPage";
 import SobrePage from "./components/SobrePage";
+import SobrePretaLab from "./Pages/SobrePage/SobrePretalab";
 import SobreMim from "./components/SobrePage/SobreMim";
 import { Route, Routes } from "react-router-dom";
 
@@ -23,7 +24,8 @@ function App() {
           <Route path="/estudantes" element={<EstudantesPage />} />
           <Route path="/pokemons" element={<PokemonPage />} />
           <Route path="/sobre" element={<SobrePage />} />
-          <Route path="/mim" element={<SobreMim />} /> 
+          <Route path="/mim" element={<SobreMim />} />
+          <Route path="/sobre/preta-lab" component={SobrePretaLab} /> 
         </Routes>
         <Rodape />
       </div>
