@@ -1,5 +1,7 @@
+
+
 const SobrePretaLabPage = () => {
-    return <h1></h1>;
+    return 
   };
   
   export default SobrePretaLabPage;
