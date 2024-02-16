@@ -1,28 +1,29 @@
-
 .img-container {
-    text-align: center; 
-  }
-  
-  .img-container img {
-    border-radius: 50%; 
-    width: 60%;
-  }
+  text-align: center;
+}
 
- 
+.img-container img {
+  border-radius: 50%;
+  width: 60%;
+  margin-bottom: 20px;
+}
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-  }
-  
-  .centro {
-    max-width: 600px; 
-    text-align: justify; 
-    color:#9b1d826b;
-    font-size: 16px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  }
-  
+.centro {
+  max-width: 600px;
+  text-align: justify;
+  color: #9b1d82; /* Cor do texto */
+  font-size: 16px;
+}
+
+.nome {
+  text-align: center; /* Centraliza o nome */
+  margin-bottom: 30px;
+}
  
