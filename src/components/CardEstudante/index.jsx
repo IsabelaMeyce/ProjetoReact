@@ -14,12 +14,12 @@ const CardEstudante = ({
         <h4>{nome}</h4>
 
         <p>
-          <b>Comida que não gosta: </b>
+          <b>Uma comida que não gosta: </b>
           {comidaQueNaoGosta}
         </p>
 
         <p>
-          <b>Uma experiência muito massa: </b>
+          <b>Uma experiência positiva: </b>
           {experienciaPositiva}
         </p>
       </div>
